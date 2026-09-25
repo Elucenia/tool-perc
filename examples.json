@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Jovem sem nenhum critério: PERC negativo",
+    "input": {},
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "52 anos em uso de anticoncepcional: 2 critérios",
+    "input": {
+      "idade": true,
+      "hormonio": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "mid"
+    },
+    "originalInput": {
+      "idade": true,
+      "hormonio": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Só FC 104: PERC positivo",
+    "input": {
+      "fc": true
+    },
+    "expected": {
+      "score": 1,
+      "level": "mid"
+    },
+    "originalInput": {
+      "fc": true
+    },
+    "expandedZeroOptions": []
+  }
+]

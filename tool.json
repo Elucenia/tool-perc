@@ -1,0 +1,251 @@
+{
+  "tool": {
+    "id": "perc",
+    "title": "Critérios PERC",
+    "short": "Exclusão clínica de TEP sem D-dímero",
+    "desc": "Critérios PERC (Pulmonary Embolism Rule-out Criteria): identificam pacientes de baixa probabilidade em que o TEP pode ser excluído sem dosar o D-dímero.",
+    "lead": "Oito critérios clínicos que, todos negativos em paciente com baixa probabilidade pré-teste, tornam o risco de TEP menor que o risco de investigar.",
+    "spec": [
+      "medicina-de-emergencia",
+      "pneumologia",
+      "clinica-medica"
+    ],
+    "fields": [
+      [
+        "idade",
+        "Idade ≥ 50 anos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "fc",
+        "FC ≥ 100 bpm",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "sat",
+        "SatO₂ &lt; 95% em ar ambiente",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "edema",
+        "Edema unilateral de membro inferior",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "hemoptise",
+        "Hemoptise",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "cirurgia",
+        "Cirurgia ou trauma com internação nas últimas 4 semanas",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "tev",
+        "TVP ou TEP prévio",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "hormonio",
+        "Uso de estrogênio (anticoncepcional ou reposição hormonal)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "Critérios PERC positivos",
+      "unit": "de 8",
+      "bands": [
+        [
+          0,
+          "low",
+          "PERC negativo: TEP excluído sem D-dímero, se a probabilidade pré-teste for baixa (&lt; 15%)",
+          "Nenhuma investigação adicional para TEP é necessária nesse contexto."
+        ],
+        [
+          1,
+          "mid",
+          "PERC positivo: não exclui TEP",
+          "Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra)."
+        ]
+      ]
+    },
+    "formula": "<p>Oito perguntas de sim/não. O PERC é <strong>negativo</strong> apenas quando todas são \"não\". Aplica-se só a quem o médico já considera de <strong>baixa probabilidade</strong> clínica (gestalt &lt; 15%).</p>",
+    "table": [
+      [
+        "Resultado",
+        "Interpretação"
+      ],
+      [
+        "0 critério (PERC negativo)",
+        "Com baixa probabilidade clínica: TEP excluído, sem D-dímero"
+      ],
+      [
+        "≥ 1 critério (PERC positivo)",
+        "Seguir com D-dímero ou imagem conforme a probabilidade"
+      ]
+    ],
+    "tips": [
+      "Nunca aplique o PERC a pacientes de probabilidade intermediária ou alta: ele foi validado só como regra de exclusão em baixo risco.",
+      "No ensaio PROPER (2018), a estratégia com PERC em baixo risco teve 0,1% de TEV em 3 meses, não inferior à estratégia com D-dímero.",
+      "A SatO₂ deve ser medida em ar ambiente; em altitude, o ponto de corte de 95% perde validade.",
+      "Em populações de alta prevalência de TEP (acima de ~15%), como pacientes internados, o PERC não é seguro."
+    ],
+    "sources": [
+      [
+        "Kline JA et al. Clinical criteria to prevent unnecessary diagnostic testing in emergency department patients with suspected pulmonary embolism. J Thromb Haemost, 2004.",
+        "https://doi.org/10.1111/j.1538-7836.2004.00790.x"
+      ],
+      [
+        "Freund Y et al. Effect of the Pulmonary Embolism Rule-Out Criteria on subsequent thromboembolic events among low-risk emergency department patients: the PROPER randomized clinical trial. JAMA, 2018.",
+        "https://doi.org/10.1001/jama.2017.21904"
+      ]
+    ],
+    "cases": [
+      [
+        "Jovem sem nenhum critério: PERC negativo",
+        [],
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "52 anos em uso de anticoncepcional: 2 critérios",
+        {
+          "idade": true,
+          "hormonio": true
+        },
+        {
+          "score": 2,
+          "level": "mid"
+        }
+      ],
+      [
+        "Só FC 104: PERC positivo",
+        {
+          "fc": true
+        },
+        {
+          "score": 1,
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 8",
+      "label": "Critérios PERC positivos",
+      "fields": [
+        [
+          "idade",
+          "chk",
+          1
+        ],
+        [
+          "fc",
+          "chk",
+          1
+        ],
+        [
+          "sat",
+          "chk",
+          1
+        ],
+        [
+          "edema",
+          "chk",
+          1
+        ],
+        [
+          "hemoptise",
+          "chk",
+          1
+        ],
+        [
+          "cirurgia",
+          "chk",
+          1
+        ],
+        [
+          "tev",
+          "chk",
+          1
+        ],
+        [
+          "hormonio",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "PERC negativo: TEP excluído sem D-dímero, se a probabilidade pré-teste for baixa (&lt; 15%)",
+          "Nenhuma investigação adicional para TEP é necessária nesse contexto."
+        ],
+        [
+          1,
+          "mid",
+          "PERC positivo: não exclui TEP",
+          "Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra)."
+        ]
+      ]
+    },
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}
