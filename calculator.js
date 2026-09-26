@@ -1,11 +1,11 @@
-/* tool-perc · Elucenia · https://github.com/Elucenia/tool-perc
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-perc · ELUCENIA · https://github.com/Elucenia/tool-perc
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"perc","title":"Critérios PERC","fields":[["idade","Idade ≥ 50 anos","chk",{"pts":1}],["fc","FC ≥ 100 bpm","chk",{"pts":1}],["sat","SatO₂ &lt; 95% em ar ambiente","chk",{"pts":1}],["edema","Edema unilateral de membro inferior","chk",{"pts":1}],["hemoptise","Hemoptise","chk",{"pts":1}],["cirurgia","Cirurgia ou trauma com internação nas últimas 4 semanas","chk",{"pts":1}],["tev","TVP ou TEP prévio","chk",{"pts":1}],["hormonio","Uso de estrogênio (anticoncepcional ou reposição hormonal)","chk",{"pts":1}]],"config":{"unit":"de 8","label":"Critérios PERC positivos","fields":[["idade","chk",1],["fc","chk",1],["sat","chk",1],["edema","chk",1],["hemoptise","chk",1],["cirurgia","chk",1],["tev","chk",1],["hormonio","chk",1]],"bands":[[0,"low","PERC negativo: TEP excluído sem D-dímero, se a probabilidade pré-teste for baixa (&lt; 15%)","Nenhuma investigação adicional para TEP é necessária nesse contexto."],[1,"mid","PERC positivo: não exclui TEP","Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra)."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
