@@ -5,6 +5,7 @@
     "short": "Exclusão clínica de TEP sem D-dímero",
     "desc": "Critérios PERC (Pulmonary Embolism Rule-out Criteria): identificam pacientes de baixa probabilidade em que o TEP pode ser excluído sem dosar o D-dímero.",
     "lead": "Oito critérios clínicos que, todos negativos em paciente com baixa probabilidade pré-teste, tornam o risco de TEP menor que o risco de investigar.",
+    "kind": "Escore",
     "spec": [
       "medicina-de-emergencia",
       "pneumologia",
@@ -15,106 +16,52 @@
         "idade",
         "Idade ≥ 50 anos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "fc",
         "FC ≥ 100 bpm",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "sat",
         "SatO₂ &lt; 95% em ar ambiente",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "edema",
         "Edema unilateral de membro inferior",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "hemoptise",
         "Hemoptise",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "cirurgia",
         "Cirurgia ou trauma com internação nas últimas 4 semanas",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "tev",
         "TVP ou TEP prévio",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "hormonio",
         "Uso de estrogênio (anticoncepcional ou reposição hormonal)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Critérios PERC positivos",
-      "unit": "de 8",
-      "bands": [
-        [
-          0,
-          "low",
-          "PERC negativo: TEP excluído sem D-dímero, se a probabilidade pré-teste for baixa (&lt; 15%)",
-          "Nenhuma investigação adicional para TEP é necessária nesse contexto."
-        ],
-        [
-          1,
-          "mid",
-          "PERC positivo: não exclui TEP",
-          "Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra)."
-        ]
-      ]
-    },
     "formula": "<p>Oito perguntas de sim/não. O PERC é <strong>negativo</strong> apenas quando todas são \"não\". Aplica-se só a quem o médico já considera de <strong>baixa probabilidade</strong> clínica (gestalt &lt; 15%).</p>",
-    "table": [
-      [
-        "Resultado",
-        "Interpretação"
-      ],
-      [
-        "0 critério (PERC negativo)",
-        "Com baixa probabilidade clínica: TEP excluído, sem D-dímero"
-      ],
-      [
-        "≥ 1 critério (PERC positivo)",
-        "Seguir com D-dímero ou imagem conforme a probabilidade"
-      ]
-    ],
-    "tips": [
-      "Nunca aplique o PERC a pacientes de probabilidade intermediária ou alta: ele foi validado só como regra de exclusão em baixo risco.",
-      "No ensaio PROPER (2018), a estratégia com PERC em baixo risco teve 0,1% de TEV em 3 meses, não inferior à estratégia com D-dímero.",
-      "A SatO₂ deve ser medida em ar ambiente; em altitude, o ponto de corte de 95% perde validade.",
-      "Em populações de alta prevalência de TEP (acima de ~15%), como pacientes internados, o PERC não é seguro."
-    ],
     "sources": [
       [
         "Kline JA et al. Clinical criteria to prevent unnecessary diagnostic testing in emergency department patients with suspected pulmonary embolism. J Thromb Haemost, 2004.",
@@ -156,68 +103,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 8",
-      "label": "Critérios PERC positivos",
-      "fields": [
-        [
-          "idade",
-          "chk",
-          1
-        ],
-        [
-          "fc",
-          "chk",
-          1
-        ],
-        [
-          "sat",
-          "chk",
-          1
-        ],
-        [
-          "edema",
-          "chk",
-          1
-        ],
-        [
-          "hemoptise",
-          "chk",
-          1
-        ],
-        [
-          "cirurgia",
-          "chk",
-          1
-        ],
-        [
-          "tev",
-          "chk",
-          1
-        ],
-        [
-          "hormonio",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "PERC negativo: TEP excluído sem D-dímero, se a probabilidade pré-teste for baixa (&lt; 15%)",
-          "Nenhuma investigação adicional para TEP é necessária nesse contexto."
-        ],
-        [
-          1,
-          "mid",
-          "PERC positivo: não exclui TEP",
-          "Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra)."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -226,17 +111,228 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:08:00.439Z",
+      "total": 256,
+      "passed": 256,
+      "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+      "evidenceSha256": "52360ca4cccc7b095b0de3b199fffda2e646b7a4dc92f325aa71eec61c4c7dfe",
+      "peerEvidencePath": "reports/review-20261003/eight-additive-source-oracles-independent-review-final23.json",
+      "peerEvidenceSha256": "64ff546626e0559b4f05f5eceb47e9cae355bfe7bc67f82744dbc3db60644f14",
+      "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+      "source": {
+        "keys": [
+          "idade",
+          "fc",
+          "sat",
+          "edema",
+          "hemoptise",
+          "cirurgia",
+          "tev",
+          "hormonio"
+        ],
+        "kind": "boolean",
+        "domain": [
+          false,
+          true
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15304025/",
+        "edition": "Kline2004, DOI10.1111/j.1538-7836.2004.00790.x",
+        "locator": "Original abstract: eight variables in a block rule; count entered adverse-feature booleans",
+        "access": "Original primary abstract directly read2026-10-04. Source SaO2>94% versus local criterion SatO2<95% is equivalent for integer percentages only; fractional saturation and detailed surgery/hormone wording require separate source-contract review. This oracle never supplies physiological measurements or approves criteria preprocessing, pretest probability, imaging or diagnostic exclusion.",
+        "unresolvedVariant": "Source abstract SaO2>94 and local label SatO2<95 require full-version review for fractional measurements. All test inputs are already classified booleans."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "perc",
+          "sha256": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde"
+        },
+        {
+          "app": "dashboard",
+          "id": "perc",
+          "sha256": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde"
+        },
+        {
+          "app": "command-center",
+          "id": "perc",
+          "sha256": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde"
+        }
+      ],
+      "qualifications": [
+        "The checked count is this implementation’s representation of already classified Boolean flags. The original source describes a decision rule in a block, not an independently validated additive clinical score. Threshold preprocessing, eligibility and clinical decision making are outside this arithmetic scope.",
+        "The integer oxygen saturation convention agrees with the consulted source only on integer percentages; fractional saturation and protocol-level surgery/hormone wording are not approved by these Boolean-count cases."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "PERC/Kline 2004:8 critérios negativos em suspeita prévia baixa; sem decisão automática",
+    "implementationVersion": "perc@native-2026-10-03+d10889f76116",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/15304025/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Oito perguntas de sim/não. O PERC é negativo apenas quando todas são \"não\". Aplica-se só a quem o médico já considera de baixa probabilidade clínica (gestalt < 15%).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade ≥ 50 anos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fc",
+            "label": "FC ≥ 100 bpm",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sat",
+            "label": "SatO₂ &lt; 95% em ar ambiente",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "edema",
+            "label": "Edema unilateral de membro inferior",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hemoptise",
+            "label": "Hemoptise",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cirurgia",
+            "label": "Cirurgia ou trauma com internação nas últimas 4 semanas",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tev",
+            "label": "TVP ou TEP prévio",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hormonio",
+            "label": "Uso de estrogênio (anticoncepcional ou reposição hormonal)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "78055ed63310f9818b647f35b54d54bfba6ca0ff3036be13e180e080b0c4b050"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Kline JA et al. Clinical criteria to prevent unnecessary diagnostic testing in emergency department patients with suspected pulmonary embolism. J Thromb Haemost, 2004.",
+          "url": "https://doi.org/10.1111/j.1538-7836.2004.00790.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Clinical criteria to prevent unnecessary diagnostic testing in emergency department patients with suspected pulmonary embolism.",
+            "year": "2004",
+            "firstPublicationDate": "2004-08-01",
+            "doi": "10.1111/j.1538-7836.2004.00790.x",
+            "pmid": "15304025",
+            "journal": "Journal of thrombosis and haemostasis : JTH",
+            "authors": "Kline JA, Mitchell AM, Kabrhel C, Richman PB, Courtney DM."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/15304025/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "f87afeb5ea8c45779a41e56f3a7c5399263209250bcd8f30342d8cad22353e32",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Freund Y et al. Effect of the Pulmonary Embolism Rule-Out Criteria on subsequent thromboembolic events among low-risk emergency department patients: the PROPER randomized clinical trial. JAMA, 2018.",
+          "url": "https://doi.org/10.1001/jama.2017.21904",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Effect of the Pulmonary Embolism Rule-Out Criteria on Subsequent Thromboembolic Events Among Low-Risk Emergency Department Patients: The PROPER Randomized Clinical Trial.",
+            "year": "2018",
+            "firstPublicationDate": "2018-02-01",
+            "doi": "10.1001/jama.2017.21904",
+            "pmid": "29450523",
+            "pmcid": "PMC5838786",
+            "journal": "JAMA",
+            "authors": "Freund Y, Cachanado M, Aubry A, Orsini C, Raynal PA, Féral-Pierssens AL, Charpentier S, Dumas F, Baarir N, Truchot J, Desmettre T, Tazarourte K, Beaune S, Leleu A, Khellaf M, Wargon M, Bloom B, Rousseau A, Simon T, Riou B, PROPER Investigator Group."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5838786/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "963ccbd2a5a78806a446267215c3e499d31c6b64f37caf77e57e926bf328350e",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:08:00.439Z",
+        "total": 256,
+        "passed": 256,
+        "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+        "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "e1418967666e9f80319173422cec6fd6fa2fca25e541cf5f19afe748b3e36c95"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde"
+    },
+    "limits": "A PERC 2004 foi derivada em pacientes de emergência avaliados para embolia pulmonar e testada em grupos de risco baixo e muito baixo. Os oito critérios devem ser simultaneamente negativos, incluindo idade < 50 anos, pulso < 100/min e saturação > 94% no estudo original. A regra não determina risco zero e sua aplicabilidade depende da seleção prévia da população; definições temporais e critérios de inclusão devem ser conferidos na versão usada.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.789Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "O resumo não explicita o limiar de gestalt < 15% da validação posterior, definição temporal exata de trauma/cirurgia ou toda faixa etária."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/perc/calculator.js",
+    "bytes": 5014,
+    "sha256": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "b0caeafc08bfba172fb3ee4685ef01e76eb65ac05824ae4b9e965815fdb841ce",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 256,
+      "sha256": "fadb8b67559315918db2c66b593875b6244aed756dac377fdfad88ca9f0eb0b9",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

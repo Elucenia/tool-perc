@@ -1,42 +1,124 @@
 [
   {
-    "label": "Jovem sem nenhum critério: PERC negativo",
-    "input": {},
+    "id": "perc",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Jovem sem nenhum critério: PERC negativo",
+    "originalInput": [],
+    "input": {
+      "idade": false,
+      "fc": false,
+      "sat": false,
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": false,
+      "hormonio": false
+    },
     "expected": {
       "score": 0,
       "level": "low"
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "main": [
+        "0",
+        "de 8"
+      ],
+      "label": "Critérios PERC positivos",
+      "raw": {
+        "score": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "52 anos em uso de anticoncepcional: 2 critérios",
-    "input": {
+    "id": "perc",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "52 anos em uso de anticoncepcional: 2 critérios",
+    "originalInput": {
       "idade": true,
       "hormonio": true
+    },
+    "input": {
+      "idade": true,
+      "hormonio": true,
+      "fc": false,
+      "sat": false,
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": false
     },
     "expected": {
       "score": 2,
       "level": "mid"
     },
-    "originalInput": {
-      "idade": true,
-      "hormonio": true
+    "recordedResult": {
+      "main": [
+        "2",
+        "de 8"
+      ],
+      "label": "Critérios PERC positivos",
+      "raw": {
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Só FC 104: PERC positivo",
-    "input": {
+    "id": "perc",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Só FC 104: PERC positivo",
+    "originalInput": {
       "fc": true
+    },
+    "input": {
+      "fc": true,
+      "idade": false,
+      "sat": false,
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": false,
+      "hormonio": false
     },
     "expected": {
       "score": 1,
       "level": "mid"
     },
-    "originalInput": {
-      "fc": true
+    "recordedResult": {
+      "main": [
+        "1",
+        "de 8"
+      ],
+      "label": "Critérios PERC positivos",
+      "raw": {
+        "score": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean idade",
+    "input": {
+      "idade": "2",
+      "fc": false,
+      "sat": false,
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean fc",
+    "input": {
+      "idade": false,
+      "fc": "2",
+      "sat": false,
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean sat",
+    "input": {
+      "idade": false,
+      "fc": false,
+      "sat": "2",
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sat"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean edema",
+    "input": {
+      "idade": false,
+      "fc": false,
+      "sat": false,
+      "edema": "2",
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "edema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hemoptise",
+    "input": {
+      "idade": false,
+      "fc": false,
+      "sat": false,
+      "edema": false,
+      "hemoptise": "2",
+      "cirurgia": false,
+      "tev": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hemoptise"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cirurgia",
+    "input": {
+      "idade": false,
+      "fc": false,
+      "sat": false,
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": "2",
+      "tev": false,
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cirurgia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tev",
+    "input": {
+      "idade": false,
+      "fc": false,
+      "sat": false,
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": "2",
+      "hormonio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tev"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hormonio",
+    "input": {
+      "idade": false,
+      "fc": false,
+      "sat": false,
+      "edema": false,
+      "hemoptise": false,
+      "cirurgia": false,
+      "tev": false,
+      "hormonio": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hormonio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
