@@ -1,0 +1,537 @@
+{
+  "id": "perc",
+  "implementationVersion": "perc@native-2026-10-05+28ce4ec477f9",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC negativo: TEP excluído sem D-dímero, se a probabilidade pré-teste for baixa (< 15%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Nenhuma investigação adicional para TEP é necessária nesse contexto.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positivo: não exclui TEP",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positivo: não exclui TEP",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC negative: PE excluded without D-dimer, if pretest probability is low (< 15%)",
+            "locale": "en",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "No additional PE investigation is needed in this context.",
+            "locale": "en",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positive: does not exclude PE",
+            "locale": "en",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Proceed with D-dimer (or with the Wells/Geneva algorithm).",
+            "locale": "en",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positive: does not exclude PE",
+            "locale": "en",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Proceed with D-dimer (or with the Wells/Geneva algorithm).",
+            "locale": "en",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC negativo: TEP excluido sin D-dímero, si la probabilidad preprueba es baja (< 15%)",
+            "locale": "es",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "No se requiere ninguna investigación adicional para TEP en este contexto.",
+            "locale": "es",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positivo: no excluye TEP",
+            "locale": "es",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Proseguir con D-dímero (o con el algoritmo de Wells/Ginebra).",
+            "locale": "es",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positivo: no excluye TEP",
+            "locale": "es",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Proseguir con D-dímero (o con el algoritmo de Wells/Ginebra).",
+            "locale": "es",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC négatif : EP exclue sans D-dimère, si la probabilité prétest est faible (< 15%)",
+            "locale": "fr",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "Aucune exploration supplémentaire pour EP n’est nécessaire dans ce contexte.",
+            "locale": "fr",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positif : n’exclut pas l’EP",
+            "locale": "fr",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Poursuivre avec le D-dimère (ou avec l’algorithme de Wells/Genève).",
+            "locale": "fr",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positif : n’exclut pas l’EP",
+            "locale": "fr",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Poursuivre avec le D-dimère (ou avec l’algorithme de Wells/Genève).",
+            "locale": "fr",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC negativ: LE ohne D-Dimer ausgeschlossen, wenn die Vortestwahrscheinlichkeit niedrig ist (< 15%)",
+            "locale": "de",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "In diesem Kontext ist keine weitere Abklärung auf LE erforderlich.",
+            "locale": "de",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positiv: schließt LE nicht aus",
+            "locale": "de",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Mit D-Dimer fortfahren (oder mit dem Wells-/Genf-Algorithmus).",
+            "locale": "de",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positiv: schließt LE nicht aus",
+            "locale": "de",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Mit D-Dimer fortfahren (oder mit dem Wells-/Genf-Algorithmus).",
+            "locale": "de",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC negativo: EP esclusa senza D-dimero, se la probabilità pre-test è bassa (< 15%)",
+            "locale": "it",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "In questo contesto non è necessario alcun ulteriore accertamento per EP.",
+            "locale": "it",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positivo: non esclude EP",
+            "locale": "it",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Procedere con il D-dimero (o con l’algoritmo di Wells/Ginevra).",
+            "locale": "it",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC positivo: non esclude EP",
+            "locale": "it",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Procedere con il D-dimero (o con l’algoritmo di Wells/Ginevra).",
+            "locale": "it",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC سلبي: تم استبعاد الانصمام الرئوي دون D-dimero، إذا كانت الاحتمالية قبل الاختبار منخفضة (< 15%)",
+            "locale": "ar",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "لا يلزم أي استقصاء إضافي للانصمام الرئوي في هذا السياق.",
+            "locale": "ar",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC إيجابي: لا يستبعد الانصمام الرئوي",
+            "locale": "ar",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "تابع باستخدام D-dimer (أو باستخدام خوارزمية ويلز/جنيف).",
+            "locale": "ar",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC إيجابي: لا يستبعد الانصمام الرئوي",
+            "locale": "ar",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "تابع باستخدام D-dimer (أو باستخدام خوارزمية ويلز/جنيف).",
+            "locale": "ar",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC阴性：若检前概率较低（< 15%），可无需D-二聚体排除PE",
+            "locale": "zh",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "在此情境下无需进一步检查PE。",
+            "locale": "zh",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC阳性：不能排除PE",
+            "locale": "zh",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "继续进行D-二聚体检测（或采用Wells/Geneva算法）。",
+            "locale": "zh",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC阳性：不能排除PE",
+            "locale": "zh",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "继续进行D-二聚体检测（或采用Wells/Geneva算法）。",
+            "locale": "zh",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC陰性：事前確率が低い（< 15%）場合、DダイマーなしでPEを除外",
+            "locale": "ja",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "この状況ではPEに対する追加検査は不要です。",
+            "locale": "ja",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC陽性：PEを除外しない",
+            "locale": "ja",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Dダイマー（またはWells/ジュネーブ・アルゴリズム）へ進む。",
+            "locale": "ja",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC陽性：PEを除外しない",
+            "locale": "ja",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "Dダイマー（またはWells/ジュネーブ・アルゴリズム）へ進む。",
+            "locale": "ja",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Jovem sem nenhum critério: PERC negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC नकारात्मक: यदि पूर्व-परीक्षण संभावना कम हो (< 15%), तो D-dimer के बिना PE को बाहर किया जा सकता है",
+            "locale": "hi",
+            "template": "documented-authored-678ee9e8b3bace8b5c54"
+          },
+          "note": {
+            "text": "इस संदर्भ में PE के लिए कोई अतिरिक्त जांच आवश्यक नहीं है।",
+            "locale": "hi",
+            "template": "documented-authored-953b34332b64a8b70943"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "52 anos em uso de anticoncepcional: 2 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC सकारात्मक: PE को बाहर नहीं करता",
+            "locale": "hi",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "D-dimer (या Wells/Geneva एल्गोरिदम) के साथ आगे बढ़ें।",
+            "locale": "hi",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Só FC 104: PERC positivo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PERC सकारात्मक: PE को बाहर नहीं करता",
+            "locale": "hi",
+            "template": "documented-authored-7a15df8acc5d3060d8e0"
+          },
+          "note": {
+            "text": "D-dimer (या Wells/Geneva एल्गोरिदम) के साथ आगे बढ़ें।",
+            "locale": "hi",
+            "template": "documented-authored-21b1fa18c591d9f89a92"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

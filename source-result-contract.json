@@ -1,0 +1,184 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "perc",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "65ab112ac52395cfd4f3b26ceab406d80cc3ad5a",
+    "oldEngineSha256": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde",
+    "currentEngineSha256": "28ce4ec477f9793672159d92fdc54ffb01179f6a2a1e8a06e6750452d940a9bc"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Jovem sem nenhum critério: PERC negativo",
+      "input": {
+        "idade": false,
+        "fc": false,
+        "sat": false,
+        "edema": false,
+        "hemoptise": false,
+        "cirurgia": false,
+        "tev": false,
+        "hormonio": false
+      },
+      "publicOutput": {
+        "id": "perc",
+        "main": [
+          "0",
+          "de 8"
+        ],
+        "label": "Critérios PERC positivos",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 8"
+        ],
+        "label": "Critérios PERC positivos",
+        "level": "low",
+        "verdict": "PERC negativo: TEP excluído sem D-dímero, se a probabilidade pré-teste for baixa (&lt; 15%)",
+        "note": "Nenhuma investigação adicional para TEP é necessária nesse contexto.",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "52 anos em uso de anticoncepcional: 2 critérios",
+      "input": {
+        "idade": true,
+        "hormonio": true,
+        "fc": false,
+        "sat": false,
+        "edema": false,
+        "hemoptise": false,
+        "cirurgia": false,
+        "tev": false
+      },
+      "publicOutput": {
+        "id": "perc",
+        "main": [
+          "2",
+          "de 8"
+        ],
+        "label": "Critérios PERC positivos",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 8"
+        ],
+        "label": "Critérios PERC positivos",
+        "level": "mid",
+        "verdict": "PERC positivo: não exclui TEP",
+        "note": "Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra).",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Só FC 104: PERC positivo",
+      "input": {
+        "fc": true,
+        "idade": false,
+        "sat": false,
+        "edema": false,
+        "hemoptise": false,
+        "cirurgia": false,
+        "tev": false,
+        "hormonio": false
+      },
+      "publicOutput": {
+        "id": "perc",
+        "main": [
+          "1",
+          "de 8"
+        ],
+        "label": "Critérios PERC positivos",
+        "raw": {
+          "score": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 1,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "de 8"
+        ],
+        "label": "Critérios PERC positivos",
+        "level": "mid",
+        "verdict": "PERC positivo: não exclui TEP",
+        "note": "Prossiga com D-dímero (ou com o algoritmo de Wells/Genebra).",
+        "raw": {
+          "score": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

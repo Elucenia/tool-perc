@@ -85,3 +85,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+PERC negative: PE excluded without D-dimer, if pretest probability is low (< 15%)
+
+No additional PE investigation is needed in this context.
+
+
+### 2
+
+PERC positive: does not exclude PE
+
+Proceed with D-dimer (or with the Wells/Geneva algorithm).
+
+
+### 3
+
+PERC positive: does not exclude PE
+
+Proceed with D-dimer (or with the Wells/Geneva algorithm).
+

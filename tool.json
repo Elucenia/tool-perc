@@ -170,7 +170,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "PERC/Kline 2004:8 critérios negativos em suspeita prévia baixa; sem decisão automática",
-    "implementationVersion": "perc@native-2026-10-03+d10889f76116",
+    "implementationVersion": "perc@native-2026-10-05+28ce4ec477f9",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/15304025/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -302,7 +302,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde"
+      "implementationHash": "28ce4ec477f9793672159d92fdc54ffb01179f6a2a1e8a06e6750452d940a9bc",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "perc@native-2026-10-03+d10889f76116",
+          "previousImplementationHash": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde",
+          "implementationHash": "28ce4ec477f9793672159d92fdc54ffb01179f6a2a1e8a06e6750452d940a9bc",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "78055ed63310f9818b647f35b54d54bfba6ca0ff3036be13e180e080b0c4b050",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A PERC 2004 foi derivada em pacientes de emergência avaliados para embolia pulmonar e testada em grupos de risco baixo e muito baixo. Os oito critérios devem ser simultaneamente negativos, incluindo idade < 50 anos, pulso < 100/min e saturação > 94% no estudo original. A regra não determina risco zero e sua aplicabilidade depende da seleção prévia da população; definições temporais e critérios de inclusão devem ser conferidos na versão usada.",
     "sourceLimitEvidence": {
@@ -321,15 +349,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/perc/calculator.js",
-    "bytes": 5014,
-    "sha256": "d10889f761162e3872925be70f90342bc47b7587152c48ab474908917f847bde"
+    "bytes": 5219,
+    "sha256": "28ce4ec477f9793672159d92fdc54ffb01179f6a2a1e8a06e6750452d940a9bc"
   },
-  "sourceToolSha256": "b0caeafc08bfba172fb3ee4685ef01e76eb65ac05824ae4b9e965815fdb841ce",
+  "sourceToolSha256": "104d64feef4d23d9a94f9be8244d85d09d1a3c069c13e0b67e5452bfcb93ba93",
   "omittedFullReferenceBanks": [
     {
       "rows": 256,
       "sha256": "fadb8b67559315918db2c66b593875b6244aed756dac377fdfad88ca9f0eb0b9",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

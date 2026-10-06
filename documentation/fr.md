@@ -85,3 +85,28 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+PERC négatif : EP exclue sans D-dimère, si la probabilité prétest est faible (< 15%)
+
+Aucune exploration supplémentaire pour EP n’est nécessaire dans ce contexte.
+
+
+### 2
+
+PERC positif : n’exclut pas l’EP
+
+Poursuivre avec le D-dimère (ou avec l’algorithme de Wells/Genève).
+
+
+### 3
+
+PERC positif : n’exclut pas l’EP
+
+Poursuivre avec le D-dimère (ou avec l’algorithme de Wells/Genève).
+
